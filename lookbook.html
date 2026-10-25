@@ -5,29 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>룩북 — COZYADD 코지애드</title>
   <meta name="description" content="COZYADD 코지애드의 전 제품 룩북. 사이즈와 원단을 보고 가격은 스마트스토어에서 확인하세요.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,600..800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@700&f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap">
-      <a class="logo" href="/">COZYADD<span>.</span></a>
+      <a class="logo" href="/">Cozyadd</a>
       <nav class="menu" aria-label="주 메뉴">
-        <a class="hide-sm" href="/#story">브랜드 이야기</a>
+        <a href="/#story">브랜드</a>
         <a href="lookbook.html" aria-current="page">룩북</a>
-        <a class="hide-sm" href="/#showroom">쇼룸</a>
+        <a href="/#showroom">쇼룸</a>
         <a href="/#contact">문의</a>
-        <a href="login.html">로그인</a>
       </nav>
+      <div class="top-right">
+        <a class="hide-sm" href="login.html">로그인</a>
+        <a href="https://booking.naver.com/booking/6/bizes/553134" target="_blank" rel="noopener">쇼룸 예약</a>
+      </div>
     </div>
   </header>
 
   <main class="page">
+    <div class="blobs" aria-hidden="true" style="height:70vh"><div class="blob b1"></div><div class="blob b2"></div></div>
     <div class="wrap">
-      <h1>룩북</h1>
-      <p class="lead">COZYADD의 모든 소파예요. 가격은 제품마다 스마트스토어에서 확인할 수 있어요.</p>
+      <h1 aria-label="룩북">Lookbook</h1>
+      <p class="lede">COZYADD의 모든 소파예요. 가격은 제품마다 스마트스토어에서 확인할 수 있어요.</p>
       <div class="look" data-look></div>
       <div class="btns" style="margin-top:64px">
         <a class="btn btn-main" href="https://booking.naver.com/booking/6/bizes/553134" target="_blank" rel="noopener">쇼룸 방문 예약</a>
@@ -36,10 +40,15 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="foot">
     <div class="wrap">
-      <p>COZYADD 코지애드 · 파주 플래그십 스토어 · 경기 파주시 송학2길 86 · 1600-1720</p>
-      <p><a href="https://smartstore.naver.com/cozyadd" target="_blank" rel="noopener">스마트스토어</a> · <a href="http://pf.kakao.com/_NpxaiT/chat" target="_blank" rel="noopener">카카오톡 채널</a> · <a href="privacy.html">개인정보 처리방침</a></p>
+      <div class="cols">
+        <div><a class="logo" href="/">Cozyadd</a></div>
+        <div><h4>쇼룸</h4><ul><li>경기 파주시 송학2길 86</li><li>09:30 - 19:30</li><li>매달 4번째 목요일 휴무</li></ul></div>
+        <div><h4>바로가기</h4><ul><li><a href="https://smartstore.naver.com/cozyadd" target="_blank" rel="noopener">스마트스토어</a></li><li><a href="http://pf.kakao.com/_NpxaiT/chat" target="_blank" rel="noopener">카카오톡 채널</a></li></ul></div>
+        <div><h4>연락</h4><ul><li><a href="tel:16001720">1600-1720</a></li><li><a href="privacy.html">개인정보 처리방침</a></li></ul></div>
+      </div>
+      <div class="bottom"><p class="big" aria-hidden="true">PAJU</p><p class="copy">COZYADD 코지애드</p></div>
     </div>
   </footer>
 
