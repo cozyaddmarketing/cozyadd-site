@@ -159,7 +159,7 @@ h2.title { font-family: var(--sans); font-weight: 700; font-size: clamp(28px, 4v
 /* 고르기 전에 (캠페인 블록) */
 .campaign { background: var(--base-2); padding: 112px 0; }
 .campaign .grid { display: grid; gap: 48px; }
-.campaign h2 { font-family: var(--sans); font-weight: 700; font-size: clamp(36px, 6vw, 88px); line-height: .9; letter-spacing: -.04em; margin: 0; }
+.campaign h2:not(.title) { font-family: var(--sans); font-weight: 700; font-size: clamp(36px, 6vw, 88px); line-height: .9; letter-spacing: -.04em; margin: 0; }
 @media (min-width: 900px) { .campaign .grid { grid-template-columns: repeat(12, 1fr); } .campaign .grid > :first-child { grid-column: span 8; } .campaign .grid > :last-child { grid-column: span 4; } }
 .stack { border-top: 1px solid var(--line); }
 .stack-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
