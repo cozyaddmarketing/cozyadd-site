@@ -218,7 +218,8 @@ h2.title { font-family: var(--sans); font-weight: 700; font-size: clamp(28px, 4v
 .foot .copy { font-size: 12px; color: rgba(228, 226, 221, .6); margin: 0 0 24px; text-align: right; }
 
 /* 아래에서 밀려 올라오는 등장 (한 번만, 움직임 줄이기 설정이면 없음) */
-.motion .rise:not(.hero .rise) { opacity: 0; transform: translateY(40px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+/* :where()로 점수를 0으로 만들어야 아래 .in 규칙이 이긴다 */
+.motion .rise:not(:where(.hero .rise)) { opacity: 0; transform: translateY(40px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
 .motion .rise.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: no-preference) {
   .hero .rise { animation: rise-in .8s var(--ease) both; }
