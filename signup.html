@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>회원가입 — COZYADD 코지애드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,600..800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="/">COZYADD<span>.</span></a>
+      <nav class="menu" aria-label="주 메뉴">
+        <a href="lookbook.html">룩북</a>
+        <a href="/#contact">문의</a>
+        <a href="login.html">로그인</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap narrow">
+      <h1>회원가입</h1>
+      <p class="lead">가입하면 회원 전용 혜택 안내를 볼 수 있어요.</p>
+      <form id="signup-form" class="form" novalidate>
+        <label>이메일<input type="email" name="email" autocomplete="email" required></label>
+        <label>비밀번호 (8자 이상)<input type="password" name="password" autocomplete="new-password" minlength="8" required></label>
+        <label class="check"><input type="checkbox" name="consent" required><span>(필수) 회원 관리를 위해 이메일을 받고, 탈퇴할 때까지 보관해요. <a href="privacy.html">개인정보 처리방침</a></span></label>
+        <p id="signup-msg" class="msg" role="status" hidden></p>
+        <div><button class="btn btn-main" type="submit">가입하기</button></div>
+      </form>
+      <p class="small-links" style="margin-top:28px">이미 회원이면 <a href="login.html">로그인</a></p>
+    </div>
+  </main>
+
+  <script src="assets/auth.js"></script>
+</body>
+</html>

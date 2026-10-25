@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>회원 혜택 — COZYADD 코지애드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,600..800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="/">COZYADD<span>.</span></a>
+      <nav class="menu" aria-label="주 메뉴">
+        <a href="lookbook.html">룩북</a>
+        <a href="/#contact">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap narrow" id="members-box" hidden>
+      <h1>회원 혜택</h1>
+      <p class="lead"><span id="member-email"></span> 님으로 로그인했어요.</p>
+      <ul id="benefits"></ul>
+      <p id="member-content"></p>
+      <div class="btns" style="margin-top:32px">
+        <a class="btn btn-main" href="https://booking.naver.com/booking/6/bizes/553134" target="_blank" rel="noopener">쇼룸 방문 예약</a>
+        <button class="btn" type="button" id="logout">로그아웃</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/auth.js"></script>
+</body>
+</html>
